@@ -2823,7 +2823,7 @@ width: 100%;
   padding: 0;
 }
 
-.left_loan i{
+.left_loan i, .bid_btns i{
   font-weight: 500;
     font-size: 8px;
     border: 1px solid lightgray;
@@ -2834,8 +2834,13 @@ width: 100%;
     align-items: center;
     justify-content: center;
     padding: 5px;
-
     background: white;
+}
+
+.bid_btns i{
+  position: absolute;
+    top: 0;
+    right: 10px;
 }
 
 .secondleft_loadlinks{
@@ -3326,4 +3331,13 @@ margin-top: 55px;
 
 .opacity-0{
   opacity: 0;
+}
+
+.formify_box .text-left{
+  font-weight: bold;
+}
+
+.tab-two .red_btn{
+  width: 100%;
+  position: relative;
 }
