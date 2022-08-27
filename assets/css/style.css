@@ -3319,3 +3319,11 @@ margin-top: 55px;
 .first_switch .slider.round {
   background-color: #2ad43a ;
 }
+
+.locations input::placeholder{
+  font-style: italic;
+}
+
+.opacity-0{
+  opacity: 0;
+}

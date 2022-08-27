@@ -88,7 +88,7 @@
             </div>
             <div class="tab-content" id="myTabContent">
               <div
-                class="tab-pane fade show active"
+                class="tab-pane fade show active first_form"
                 id="One"
                 role="tabpanel"
                 aria-labelledby="One-tab"
@@ -377,30 +377,30 @@
                         >Listing</label
                       >
                       <input
-                        type="text"
+                        type="text" value="https://www.equipmentfx.com/ID47529xz2497t1"
                         class="form-control"
                         id="inputAddress"
                         
                       />
-                      <button type="submit" class="btn thm_btn red_btn">
+                      <button type="submit" class="btn thm_btn red_btn view_inspection">
                         View Inspection
                       </button>
                     </div>
 
-                    <div class="form-group col-lg-12 ">
+                    <div class="form-group col-lg-12 locations ">
                       <label class="input_title" for="inputAddress"
                         >Location</label
                       >
                       <input
                         type="text"
                         class="form-control"
-                        id="inputAddress"
+                        id="inputAddress" placeholder="Pickup Location"
                         
                       />
                       <input
                       type="text"
                       class="form-control"
-                      id="inputAddress"
+                      id="inputAddress" placeholder="Delivery Location"
                       
                     />
                  
@@ -408,8 +408,7 @@
 
                     <div class="form-group col-lg-12 border-bottom">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56499.84182960371!2d85.29769460162235!3d27.740739024261625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1954383760d7%3A0xc45480d6388a76ca!2sUnited%20Heavy%20Equipment%20And%20Earth%20Movers%20Pvt.LTD!5e0!3m2!1sen!2snp!4v1661441581794!5m2!1sen!2snp" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+<img src="assets/img/Capture.PNG" alt="" class="w-100"/>
                   </div>
 
 
@@ -478,15 +477,7 @@
                         placeholder="Company Name"
                       />
                     </div>
-                    <div class="form-group col-lg-12">
-                   
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputName5"
-                        placeholder="Company Website"
-                      />
-                    </div>
+                
                     <div class="form-group col-lg-12">
                    
                       <input
@@ -554,7 +545,7 @@
                 </div>
               </div>
               <div
-                class="tab-pane fade"
+                class="tab-pane fade inspected_form"
                 id="Three"
                 role="tabpanel"
                 aria-labelledby="Three-tab"
@@ -1290,7 +1281,24 @@
         $(".step3").show();
         $(".form_titlethree").show();
         $(".tabs_title").addClass('tabsheight');
+        $("#myTab").addClass('opacity-0')
       });
     </script>
+
+    <script>
+      $(".view_inspection").click(function(){
+        $(".inspected_form").addClass('active');
+        $(".inspected_form").addClass('show');
+        $(".form_titlethree").addClass('d-block');
+        $(".form_titleone").addClass('d-none');
+        $("#myTab").addClass('opacity-0')
+
+        
+        $(".first_form").removeClass('active');
+        
+      })
+    </script>
+
+
   </body>
 </html>
